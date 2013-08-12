@@ -1,22 +1,22 @@
 #! /usr/bin/env ruby
 
 require 'optparse'
-require 'flex-backup'
+require 'flex-admin'
 
-options  = Flex::Backup::Tasks.new.default_options
+options  = Flex::Admin::Tasks.new.default_options
 
 version  = File.read(File.expand_path('../../VERSION', __FILE__)).strip
-copy     = "flex-backup #{version} (c) 2012-2013 by Domizio Demichelis"
+copy     = "flex-admin #{version} (c) 2012-2013 by Domizio Demichelis"
 optparse = OptionParser.new do |opts|
 
   opts.banner = <<-banner
 
-    flex-backup:
+    flex-admin:
         Generic binary tool to dump/load data from/to any elasticsearch index (no app needed).
         If you need to migrate data, use the flex live-reindexing.
 
     Usage:
-        flex-backup <command> [options]
+        flex-admin <command> [options]
     <command>:
         dump    dumps the data from one or more elasticsearch indices
         load    loads a dumpfile
@@ -97,10 +97,10 @@ puts copy
 case command
 
 when 'dump'
-  Flex::Backup::Tasks.new(options).dump_to_file(true)
+  Flex::Admin::Tasks.new(options).dump_to_file(true)
 
 when 'load'
-  Flex::Backup::Tasks.new(options).load_from_file
+  Flex::Admin::Tasks.new(options).load_from_file
 
 when 'stats'
   puts '>> puts Flex.index_stats.to_yaml'

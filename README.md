@@ -1,4 +1,4 @@
-# Flex-backup
+# Flex-admin
 
 Simple tool to dump/load one or more elasticsearch indices and types.
 
@@ -6,9 +6,9 @@ Simple tool to dump/load one or more elasticsearch indices and types.
 
 * [Flex Repository](https://github.com/ddnexus/flex)
 * [Flex Project (Global Documentation)](http://ddnexus.github.io/flex/doc/)
-* [flex-backup Gem (Specific Documentation)](http://ddnexus.github.io/flex/doc/6-flex-backup)
-* [Issues](https://github.com/ddnexus/flex-backup/issues)
-* [Pull Requests](https://github.com/ddnexus/flex-backup/pulls)
+* [flex-admin Gem (Specific Documentation)](http://ddnexus.github.io/flex/doc/6-flex-admin)
+* [Issues](https://github.com/ddnexus/flex-admin/issues)
+* [Pull Requests](https://github.com/ddnexus/flex-admin/pulls)
 
 ## Branches
 
@@ -21,4 +21,4 @@ Special thanks for their sponsorship to [Escalate Media](http://www.escalatemedi
 ## Copyright
 
 Copyright (c) 2012-2013 by [Domizio Demichelis](mailto://dd.nexus@gmail.com)<br>
-See [LICENSE](https://github.com/ddnexus/flex-backup/blob/master/LICENSE) for details.
+See [LICENSE](https://github.com/ddnexus/flex-admin/blob/master/LICENSE) for details.

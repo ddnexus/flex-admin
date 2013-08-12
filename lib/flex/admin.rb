@@ -1,5 +1,5 @@
 module Flex
-  module Backup
+  module Admin
 
     class Tasks
 
@@ -17,7 +17,7 @@ module Flex
       end
 
       def default_options
-        @default_options ||= { :file       => './flex-backup.dump',
+        @default_options ||= { :file       => './flex.dump',
                                :index      => Conf.variables[:index],
                                :type       => Conf.variables[:type],
                                :scroll     => '5m',
